@@ -27,6 +27,7 @@ RUN apk add --update wget bash libc6-compat && \
 # change context to gatling directory
 WORKDIR  /opt/gatling
 
+
 # set directories below to be mountable from host
 VOLUME ["/opt/gatling/conf", "/opt/gatling/results", "/opt/gatling/user-files"]
 
